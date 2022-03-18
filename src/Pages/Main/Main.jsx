@@ -3,10 +3,15 @@ import './Main.css'
 import poster from '../../Assets/img/BBposter.jpg'
 import Tabs from '../../UIKit/Tabs/Tabs'
 
-function Main() {
+function Main({episodes, setSelected, selected}) {
+
+  console.log(selected);
+
   return (
     <div className="mainWrapper">
+
         <div className="main">
+       
           <div className="header">
             <span className="headerSpan">Breaking Bad</span>
           </div>
@@ -14,7 +19,7 @@ function Main() {
             <img className="poster" src={poster} alt="" />
           </div>
           <div className="season">
-          <Tabs />
+          <Tabs episodes={episodes} setSelected={setSelected} />
           </div>
         </div>
     </div>

@@ -40,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-function BasicTabs() {
+function BasicTabs({episodes, setSelected}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -60,19 +60,19 @@ function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-         <EpisodeLine variant="season1" />
+         <EpisodeLine episodes={episodes} setSelected={setSelected} variant="season1" />
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <EpisodeLine variant="season2" />
+      <EpisodeLine  episodes={episodes} setSelected={setSelected} variant="season2" />
       </TabPanel>
       <TabPanel value={value} index={2}>
-      <EpisodeLine variant="season3" />
+      <EpisodeLine episodes={episodes} setSelected={setSelected} variant="season3" />
       </TabPanel>
       <TabPanel value={value} index={3}>
-      <EpisodeLine variant="season4" />
+      <EpisodeLine episodes={episodes} setSelected={setSelected} variant="season4" />
       </TabPanel>
       <TabPanel value={value} index={4}>
-      <EpisodeLine variant="season5" />
+      <EpisodeLine episodes={episodes} setSelected={setSelected} variant="season5" />
       </TabPanel>
     </Box>
   );

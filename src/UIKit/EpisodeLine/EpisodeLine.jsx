@@ -2,21 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./EpisodeLine.css";
 
-function EpisodeLine({variant}) {
-  const [episodes, setEpisodes] = useState([]);
-  const [selected, setSelected] = useState([]);
-console.log(selected);
-  // console.log(Object.prototype.toString.call(episodes.data))
+function EpisodeLine({variant, episodes, setSelected}) {
 
-  useEffect(() => {
-    const getData = async () => {
-      const data = await axios.get(
-        "https://www.breakingbadapi.com/api/episodes?series=Breaking+Bad"
-      );
-      setEpisodes(data);
-    };
-    getData();
-  }, []);
   if (variant === "season1") {
   return (
     <div className="god">
