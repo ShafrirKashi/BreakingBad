@@ -27,7 +27,7 @@ function App() {
       <Routes>
         // state "selected" is passing to Main but won't pass to Episode // ?!
         <Route path="/main" element={<Main episodes={episodes} setSelected={setSelected} selected={selected}/>}/>
-        <Route path="/episode" element={<Episode selected={selected} />} />
+        <Route path="/episode/:id" element={<Episode />} />
       </Routes>
       <div className="dsaasd"></div>
       <Episode selected={selected}  />

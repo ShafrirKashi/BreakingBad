@@ -1,11 +1,12 @@
 import React from 'react'
+import {useParams} from 'react-router-dom'
 
-function Episode({selected}) {
+function Episode() {
 
-  console.log(selected)
-  
+  const params = useParams()
+  console.log(params)
   return (
-    <div>Episode {selected} </div>
+    <div>Episode {params.id}  </div>
   )
 }
 
