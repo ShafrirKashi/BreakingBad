@@ -7,8 +7,6 @@ import './Character.css'
 function Character() {
   const params = useParams();
 
-  console.log(Characters[1].name);
-  console.log(params.character);
   return (
     <div className="characterMain">
       {Characters.map((Character) => {
