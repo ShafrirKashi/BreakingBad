@@ -1,26 +1,48 @@
-.episodeMain{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(29, 29, 29);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.episodeMain {
+  width: 100%;
+  height: 93.2vh;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  justify-content: center;
+  color: white;
 }
-.episodeWrapper{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    margin-top: 3rem;
-    background-color: green;
+.episodeWrapper {
+  width: 50%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 3rem;
 }
-.EpisodeTitleWrapper{
-    width: 100%;
-    display: flex;
-    height: 5rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: red;
+.EpisodeTitleWrapper {
+  width: 100%;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(41, 41, 41);
+}
+.characterLine:hover {
+  background-color: rgb(36, 36, 36);
+}
+.EpisodePageTitle {
+  font-size: 2rem;
+  color: rgb(95, 95, 255);
+}
+.EpisodePageAirDate {
+  font-size: 1rem;
+  color: rgb(160, 160, 160);
+}
+.characterWrapper {
+  width: 100%;
+}
+.characterLine {
+  height: 5rem;
+  width: inherit;
+  border-bottom: 2px solid rgb(41, 41, 41);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 }

@@ -3,13 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Main from "./Pages/Main/Main";
 import Episode from "./Pages/Episode/Episode";
+import Character from "./Pages/Character/Character";
 import axios from "axios";
+import './App.css'
+
 
 function App() {
   const [episodes, setEpisodes] = useState([]);
   const [selected, setSelected] = useState([]);
 
-  // console.log(selected);
 
   useEffect(() => {
     const getData = async () => {
@@ -25,19 +27,10 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route
-          path="/main"
-          element={
-            <Main
-              episodes={episodes}
-              setSelected={setSelected}
-              selected={selected}
-            />
-          }
-        />
+        <Route path="/main" element={<Main episodes={episodes} setSelected={setSelected} selected={selected}/>}/>
         <Route path="/episode/:id" element={<Episode episodes={episodes} />} />
+        <Route path="/:character" element={<Character/>} />
       </Routes>
-      <div className="dsaasd"></div>
     </div>
   );
 }

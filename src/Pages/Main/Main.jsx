@@ -4,11 +4,8 @@ import poster from '../../Assets/img/BBposter.jpg'
 import Tabs from '../../UIKit/Tabs/Tabs'
 import {useHistory} from 'react-router-dom'
 
-function Main({episodes, setSelected, selected}) {
+function Main({episodes, setSelected}) {
 
-  // const history = useHistory()
-  
-  // console.log(history);
   return (
     <div className="mainWrapper">
 
