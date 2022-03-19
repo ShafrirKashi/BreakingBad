@@ -16,13 +16,16 @@ function Episode({ episodes }) {
       <div className="episodeWrapper">
         <div className="EpisodeTitleWrapper">
           <div className="EpisodePageTitle">
-            {episodes && episodes.data[params.id - 1].title}
+            {episodes.data[params.id - 1].title} <br></br>
+            <div className="Characterstitle">
+            Characters:
+            </div>
           </div>
           <div className="EpisodePageAirDate">
-            {episodes && episodes.data[params.id - 1].air_date}
+            {episodes.data[params.id - 1].air_date}
           </div>
         </div>
-        {episodes && episodes.data[params.id - 1].characters?.map((character) => (
+        {episodes.data[params.id - 1].characters?.map((character) => (
           <div
             className="characterWrapper"
             onClick={() => handleSelected(character)}

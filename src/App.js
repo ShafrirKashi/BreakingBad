@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Main from "./Pages/Main/Main";
@@ -23,12 +23,15 @@ function App() {
     getData();
   }, []);
 
+ 
+
+
   return (
     <div>
       <Navbar />
       <Routes>
         <Route path="/main" element={<Main episodes={episodes} setSelected={setSelected} selected={selected}/>}/>
-        <Route path="/episode/:id" element={<Episode episodes={episodes} />} />
+        <Route path="/episode/:id" element={<Episode  episodes={episodes} />} />
         <Route path="/:character" element={<Character/>} />
       </Routes>
     </div>

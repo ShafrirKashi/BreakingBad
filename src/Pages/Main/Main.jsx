@@ -6,6 +6,7 @@ import {useHistory} from 'react-router-dom'
 
 function Main({episodes, setSelected}) {
 
+
   return (
     <div className="mainWrapper">
 

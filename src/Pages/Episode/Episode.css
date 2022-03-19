@@ -46,3 +46,7 @@
   align-items: center;
   cursor: pointer;
 }
+.Characterstitle{
+  font-size: 1.3rem;
+  color: rgb(136, 136, 136);
+}
