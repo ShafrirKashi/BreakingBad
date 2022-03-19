@@ -10,40 +10,52 @@
   width: 50%;
   /* height: 100%; */
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 3rem;
-
+  overflow: hidden;
 }
 .header {
   width: 100%;
   height: 5rem;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+  font-family: Bahnschrift;
 }
 .headerSpan {
   font-size: 3.3rem;
   color: white;
 }
+.amcLogo{
+  width: 5rem;
+}
 .posterWrapper {
   width: 100%;
-  height: 20rem;
-  margin-top: 10px;
+  height: 5rem;
   display: flex;
-  justify-content: start;
+  margin-top: 9rem;
+  justify-content: space-between;
   align-items: center;
+  font-family: Bahnschrift;
 }
 .poster {
-  width: 35rem;
+  width: 60rem;
+  /* height: 25rem; */
+  /* object-fit: cover; */
+  margin-top: 12rem;
+  background-size: contain;
 }
 .season {
-    width: 100%;
-    margin-top: 1rem;
+  width: 100%;
+  margin-top: 21rem;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.asdasdsadsa{
+.asdasdsadsa {
   background-color: green;
   display: none;
 }

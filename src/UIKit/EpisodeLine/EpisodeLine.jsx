@@ -19,8 +19,8 @@ function EpisodeLine({variant, episodes}) {
         ?.map((filteredName) => (
           <div key={filteredName.episode_id} onClick={() => handleSelected(filteredName.episode_id)} className="EpisodeLine">
             <div className="EpisodeLineTitle">
-            <div  className="Season1EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
-            <div className="Season1EpisodeAirDate"> {filteredName.air_date}</div>
+            <div  className="EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
+            <div className="EpisodeAirDate"> {filteredName.air_date}</div>
             </div>
           </div>
         ))}
@@ -34,8 +34,8 @@ function EpisodeLine({variant, episodes}) {
           ?.map((filteredName) => (
             <div onClick={() => handleSelected(filteredName.episode_id)} className="EpisodeLine">
               <div className="EpisodeLineTitle">
-              <div className="Season1EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
-              <div className="Season1EpisodeAirDate"> {filteredName.air_date}</div>
+              <div className="EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
+              <div className="EpisodeAirDate"> {filteredName.air_date}</div>
               </div>
             </div>
           ))}
@@ -49,8 +49,8 @@ function EpisodeLine({variant, episodes}) {
           ?.map((filteredName) => (
             <div onClick={() => handleSelected(filteredName.episode_id)} className="EpisodeLine">
               <div className="EpisodeLineTitle">
-              <div className="Season1EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
-              <div className="Season1EpisodeAirDate"> {filteredName.air_date}</div>
+              <div className="EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
+              <div className="EpisodeAirDate"> {filteredName.air_date}</div>
               </div>
             </div>
           ))}
@@ -64,8 +64,8 @@ function EpisodeLine({variant, episodes}) {
           ?.map((filteredName) => (
             <div onClick={(e) => {handleSelected(filteredName.episode_id)}} className="EpisodeLine">
               <div className="EpisodeLineTitle">
-              <div className="Season1EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
-              <div className="Season1EpisodeAirDate"> {filteredName.air_date}</div>
+              <div className="EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
+              <div className="EpisodeAirDate"> {filteredName.air_date}</div>
               </div>
             </div>
           ))}
@@ -79,8 +79,8 @@ function EpisodeLine({variant, episodes}) {
           ?.map((filteredName) => (
             <div onClick={() => handleSelected(filteredName.episode_id)} className="EpisodeLine">
               <div className="EpisodeLineTitle">
-              <div className="Season1EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
-              <div className="Season1EpisodeAirDate"> {filteredName.air_date}</div>
+              <div className="EpisodeTitle">{filteredName.episode_id}. {filteredName.title}</div>
+              <div className="EpisodeAirDate"> {filteredName.air_date}</div>
               </div>
             </div>
           ))}

@@ -16,6 +16,7 @@ function Main({episodes, setSelected, selected}) {
        
           <div className="header">
             <span className="headerSpan">Breaking Bad</span>
+            <img className="amcLogo" src="https://cdn.amcnetworks.com/amc/theme/web/amc_logo_bk_bg.png" alt="" />
           </div>
           <div className="posterWrapper">
             <img className="poster" src={poster} alt="" />
