@@ -30,7 +30,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/main" element={<Main episodes={episodes} setSelected={setSelected} selected={selected}/>}/>
+        <Route path="/" element={<Main episodes={episodes} setSelected={setSelected} selected={selected}/>}/>
         <Route path="/episode/:id" element={<Episode  episodes={episodes} />} />
         <Route path="/:character" element={<Character/>} />
       </Routes>
