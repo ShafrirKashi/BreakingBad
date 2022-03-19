@@ -15,10 +15,10 @@ function Character() {
             <div className="characterWrapper1">
               <div className="characterName">{Character.name}</div>
                 <img className="characterImg" src={Character.img} alt="" />
-              <div className="characterLine">Birthday: {Character.birthday}</div>
-              <div className="characterLine">Nickname: {Character.nickname}</div>
-              <div className="characterLine">Status: {Character.status}</div>
-              <div className="characterLine">Occupation: {Character.occupation.toString().replaceAll(",", ", ")}</div>
+              <div className="characterLine1">Birthday: {Character.birthday}</div>
+              <div className="characterLine1">Nickname: {Character.nickname}</div>
+              <div className="characterLine1">Status: {Character.status}</div>
+              <div className="characterLine1">Occupation: {Character.occupation.toString().replaceAll(",", ", ")}</div>
             </div>
           );
         } else {
